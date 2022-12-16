@@ -1,5 +1,0 @@
-import pandas as pd
-sheet_id = "1dPeBZbRMQDMLTgm0DU6QbtS2z3E7Qs1-vBTfzftzpIo"
-sheet_name = “Sheet1”
-url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}"
-pd.read_csv(url)

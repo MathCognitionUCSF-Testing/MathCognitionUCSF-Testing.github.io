@@ -1,0 +1,60 @@
+body { margin: 50px auto; width: 85%; }
+
+a { text-decoration: underline; color: #052049; }
+a:hover { text-decoration: underline;}
+
+p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
+
+h1, h2, h3, h4 { font-family: 'Computer Modern Serif', serif; }
+h1 { font-size: 2.5em; color: #052049}
+h2 { font-size: 2.3em; color: #052049}
+h3 { font-size: 1.9em; color: #052049}
+h4 { font-size: 1.5em; color: #052049}
+
+nav ul, footer ul { font-size: 1.5em; font-family: 'Computer Modern Serif', serif; padding: 0px; list-style: none; font-weight: bold; color: #052049}
+nav ul li, footer ul li { display: inline; margin-right: 20px; color: #052049}
+
+
+footer { border-top: 1px solid #052049; font-size: 1.5em; }
+
+/* Blog */
+ul.posts { margin: 20px auto 40px; font-size: 1.5em; }
+ul.posts li { list-style: none; }
+
+/* CV */
+.cv { margin: 0px 0px 60px; }
+.cv h1 { font-size: 3em; }
+.cv h2 { font-size: 2em; }
+.cv address, .cv .download { font-family: 'Computer Modern Serif', serif; }
+.cv address, .cv p { font-size: 1.2em; }
+.cv .download { float: right; font-size: .8em; text-transform: uppercase; }
+
+
+/* @media only screen and (max-width: 768px) {
+    body {
+      width: 95%;
+      font-size: 1.2em
+    }
+  } */ 
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+
+
+.image_medium {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.image_large {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}

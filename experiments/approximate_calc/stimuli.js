@@ -1,434 +1,722 @@
 var test_stimuli = [
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/78_1_4_82.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 950
+    "fixation_duration": 550,
+    "n1": 10,
+    "n2": 15,
+    "ratio": 0.66666666666666663
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/50_1_9_59.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 450
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 20,
+    "ratio": 0.5
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/24_-1_5_19.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 850
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 25,
+    "ratio": 0.4
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/89_1_7_96.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 650
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 30,
+    "ratio": 0.33333333333333331
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/49_-1_9_40.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_15_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 750,
+    "n1": 15,
+    "n2": 10,
+    "ratio": 1.5
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/49_-1_6_43.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 850
+    "fixation_duration": 550,
+    "n1": 15,
+    "n2": 20,
+    "ratio": 0.75
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/42_1_9_51.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 950
+    "fixation_duration": 850,
+    "n1": 15,
+    "n2": 25,
+    "ratio": 0.6
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/74_1_4_78.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 350
+    "fixation_duration": 450,
+    "n1": 15,
+    "n2": 30,
+    "ratio": 0.5
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/41_-1_2_39.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_20_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 350
+    "fixation_duration": 350,
+    "n1": 20,
+    "n2": 10,
+    "ratio": 2
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/75_1_6_81.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_20_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 250
+    "fixation_duration": 650,
+    "n1": 20,
+    "n2": 15,
+    "ratio": 1.3333333333333333
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/19_1_1_20.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_20_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 950
+    "fixation_duration": 350,
+    "n1": 20,
+    "n2": 25,
+    "ratio": 0.8
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/24_-1_4_20.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_20_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 850
+    "fixation_duration": 550,
+    "n1": 20,
+    "n2": 30,
+    "ratio": 0.66666666666666663
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/70_1_8_78.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_25_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 450
+    "fixation_duration": 750,
+    "n1": 25,
+    "n2": 10,
+    "ratio": 2.5
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/11_1_7_18.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_25_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 950
+    "fixation_duration": 850,
+    "n1": 25,
+    "n2": 15,
+    "ratio": 1.6666666666666667
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/43_-1_4_39.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_25_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 950
+    "fixation_duration": 650,
+    "n1": 25,
+    "n2": 20,
+    "ratio": 1.25
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/66_-1_1_65.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_25_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 350
+    "fixation_duration": 950,
+    "n1": 25,
+    "n2": 30,
+    "ratio": 0.83333333333333337
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/10_-1_3_7.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 250
+    "fixation_duration": 950,
+    "n1": 30,
+    "n2": 10,
+    "ratio": 3
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/58_-1_7_51.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 450
+    "fixation_duration": 450,
+    "n1": 30,
+    "n2": 15,
+    "ratio": 2
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/49_1_3_52.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 750,
+    "n1": 30,
+    "n2": 20,
+    "ratio": 1.5
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/90_-1_1_89.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 450
+    "fixation_duration": 250,
+    "n1": 30,
+    "n2": 25,
+    "ratio": 1.2
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/49_-1_8_41.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 850
+    "fixation_duration": 550,
+    "n1": 10,
+    "n2": 15,
+    "ratio": 0.66666666666666663
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/56_-1_8_48.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 20,
+    "ratio": 0.5
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/10_1_5_15.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 550
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 25,
+    "ratio": 0.4
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/63_1_1_64.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 30,
+    "ratio": 0.33333333333333331
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/42_1_8_50.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_15_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 350
+    "fixation_duration": 750,
+    "n1": 15,
+    "n2": 10,
+    "ratio": 1.5
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/44_1_9_53.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 550,
+    "n1": 15,
+    "n2": 20,
+    "ratio": 0.75
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/37_-1_2_35.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 850,
+    "n1": 15,
+    "n2": 25,
+    "ratio": 0.6
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/19_-1_9_10.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 950
+    "fixation_duration": 450,
+    "n1": 15,
+    "n2": 30,
+    "ratio": 0.5
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/38_-1_5_33.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_20_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 450
+    "fixation_duration": 350,
+    "n1": 20,
+    "n2": 10,
+    "ratio": 2
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/71_-1_6_65.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_20_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 250
+    "fixation_duration": 650,
+    "n1": 20,
+    "n2": 15,
+    "ratio": 1.3333333333333333
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/50_1_5_55.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_20_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 650
+    "fixation_duration": 350,
+    "n1": 20,
+    "n2": 25,
+    "ratio": 0.8
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/81_1_2_83.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_20_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 550
+    "fixation_duration": 550,
+    "n1": 20,
+    "n2": 30,
+    "ratio": 0.66666666666666663
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/26_-1_7_19.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_25_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 450
+    "fixation_duration": 750,
+    "n1": 25,
+    "n2": 10,
+    "ratio": 2.5
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/41_1_1_42.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_25_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 250
+    "fixation_duration": 850,
+    "n1": 25,
+    "n2": 15,
+    "ratio": 1.6666666666666667
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/61_-1_2_59.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_25_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 950
+    "fixation_duration": 650,
+    "n1": 25,
+    "n2": 20,
+    "ratio": 1.25
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/58_1_8_66.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_25_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 950,
+    "n1": 25,
+    "n2": 30,
+    "ratio": 0.83333333333333337
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/21_-1_4_17.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 250
+    "fixation_duration": 950,
+    "n1": 30,
+    "n2": 10,
+    "ratio": 3
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/69_-1_7_62.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 450
+    "fixation_duration": 450,
+    "n1": 30,
+    "n2": 15,
+    "ratio": 2
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/49_-1_3_46.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 850
+    "fixation_duration": 750,
+    "n1": 30,
+    "n2": 20,
+    "ratio": 1.5
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/67_1_4_71.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 650
+    "fixation_duration": 250,
+    "n1": 30,
+    "n2": 25,
+    "ratio": 1.2
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/51_-1_3_48.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 650
+    "fixation_duration": 550,
+    "n1": 10,
+    "n2": 15,
+    "ratio": 0.66666666666666663
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/89_1_2_91.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 950
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 20,
+    "ratio": 0.5
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/25_1_6_31.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 650
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 25,
+    "ratio": 0.4
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/27_-1_3_24.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 250
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 30,
+    "ratio": 0.33333333333333331
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/20_1_9_29.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_15_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 850
+    "fixation_duration": 750,
+    "n1": 15,
+    "n2": 10,
+    "ratio": 1.5
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/73_-1_7_66.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 550
+    "fixation_duration": 550,
+    "n1": 15,
+    "n2": 20,
+    "ratio": 0.75
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/80_1_6_86.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 650
+    "fixation_duration": 850,
+    "n1": 15,
+    "n2": 25,
+    "ratio": 0.6
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/23_1_3_26.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 350
+    "fixation_duration": 450,
+    "n1": 15,
+    "n2": 30,
+    "ratio": 0.5
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/29_1_1_30.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_20_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 350
+    "fixation_duration": 350,
+    "n1": 20,
+    "n2": 10,
+    "ratio": 2
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/87_1_3_90.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_20_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 650,
+    "n1": 20,
+    "n2": 15,
+    "ratio": 1.3333333333333333
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/81_1_7_88.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_20_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 550
+    "fixation_duration": 350,
+    "n1": 20,
+    "n2": 25,
+    "ratio": 0.8
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/59_1_2_61.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_20_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 550,
+    "n1": 20,
+    "n2": 30,
+    "ratio": 0.66666666666666663
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/54_1_7_61.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_25_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 750,
+    "n1": 25,
+    "n2": 10,
+    "ratio": 2.5
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/87_-1_4_83.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_25_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 850,
+    "n1": 25,
+    "n2": 15,
+    "ratio": 1.6666666666666667
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/75_-1_1_74.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_25_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 950
+    "fixation_duration": 650,
+    "n1": 25,
+    "n2": 20,
+    "ratio": 1.25
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/63_-1_8_55.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_25_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 350
+    "fixation_duration": 950,
+    "n1": 25,
+    "n2": 30,
+    "ratio": 0.83333333333333337
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/35_1_2_37.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 350
+    "fixation_duration": 950,
+    "n1": 30,
+    "n2": 10,
+    "ratio": 3
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/67_-1_6_61.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 250
+    "fixation_duration": 450,
+    "n1": 30,
+    "n2": 15,
+    "ratio": 2
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/22_1_5_27.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 450
+    "fixation_duration": 750,
+    "n1": 30,
+    "n2": 20,
+    "ratio": 1.5
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/90_-1_9_81.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_30_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 550
+    "fixation_duration": 250,
+    "n1": 30,
+    "n2": 25,
+    "ratio": 1.2
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/10_-1_5_5.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 550
+    "fixation_duration": 550,
+    "n1": 10,
+    "n2": 15,
+    "ratio": 0.66666666666666663
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/31_-1_9_22.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 850
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 20,
+    "ratio": 0.5
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/35_-1_5_30.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 25,
+    "ratio": 0.4
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/33_1_3_36.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_10_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 250
+    "fixation_duration": 850,
+    "n1": 10,
+    "n2": 30,
+    "ratio": 0.33333333333333331
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/50_1_4_54.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_15_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 250
+    "fixation_duration": 750,
+    "n1": 15,
+    "n2": 10,
+    "ratio": 1.5
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/89_1_5_94.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_20.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 250
+    "fixation_duration": 550,
+    "n1": 15,
+    "n2": 20,
+    "ratio": 0.75
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/39_-1_8_31.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 550
+    "fixation_duration": 850,
+    "n1": 15,
+    "n2": 25,
+    "ratio": 0.6
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/11_1_8_19.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_15_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 450
+    "fixation_duration": 450,
+    "n1": 15,
+    "n2": 30,
+    "ratio": 0.5
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/13_1_6_19.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_20_10.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 350
+    "fixation_duration": 350,
+    "n1": 20,
+    "n2": 10,
+    "ratio": 2
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/30_-1_1_29.png",
+    "correct_response": "f",
+    "stimulus": "img/dots_20_15.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 650
+    "fixation_duration": 650,
+    "n1": 20,
+    "n2": 15,
+    "ratio": 1.3333333333333333
   },
   {
-    "correct_response": "ArrowDown",
-    "stimulus": "/experiments/approximate_calc/img/33_-1_6_27.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_20_25.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 750
+    "fixation_duration": 350,
+    "n1": 20,
+    "n2": 25,
+    "ratio": 0.8
   },
   {
-    "correct_response": "ArrowUp",
-    "stimulus": "/experiments/approximate_calc/img/87_-1_2_85.png",
+    "correct_response": "j",
+    "stimulus": "img/dots_20_30.png",
     "fixation": "<div style=\"font-size:60px;\">+</div>",
-    "fixation_duration": 950
+    "fixation_duration": 550,
+    "n1": 20,
+    "n2": 30,
+    "ratio": 0.66666666666666663
+  },
+  {
+    "correct_response": "f",
+    "stimulus": "img/dots_25_10.png",
+    "fixation": "<div style=\"font-size:60px;\">+</div>",
+    "fixation_duration": 750,
+    "n1": 25,
+    "n2": 10,
+    "ratio": 2.5
+  },
+  {
+    "correct_response": "f",
+    "stimulus": "img/dots_25_15.png",
+    "fixation": "<div style=\"font-size:60px;\">+</div>",
+    "fixation_duration": 850,
+    "n1": 25,
+    "n2": 15,
+    "ratio": 1.6666666666666667
+  },
+  {
+    "correct_response": "f",
+    "stimulus": "img/dots_25_20.png",
+    "fixation": "<div style=\"font-size:60px;\">+</div>",
+    "fixation_duration": 650,
+    "n1": 25,
+    "n2": 20,
+    "ratio": 1.25
+  },
+  {
+    "correct_response": "j",
+    "stimulus": "img/dots_25_30.png",
+    "fixation": "<div style=\"font-size:60px;\">+</div>",
+    "fixation_duration": 950,
+    "n1": 25,
+    "n2": 30,
+    "ratio": 0.83333333333333337
+  },
+  {
+    "correct_response": "f",
+    "stimulus": "img/dots_30_10.png",
+    "fixation": "<div style=\"font-size:60px;\">+</div>",
+    "fixation_duration": 950,
+    "n1": 30,
+    "n2": 10,
+    "ratio": 3
+  },
+  {
+    "correct_response": "f",
+    "stimulus": "img/dots_30_15.png",
+    "fixation": "<div style=\"font-size:60px;\">+</div>",
+    "fixation_duration": 450,
+    "n1": 30,
+    "n2": 15,
+    "ratio": 2
+  },
+  {
+    "correct_response": "f",
+    "stimulus": "img/dots_30_20.png",
+    "fixation": "<div style=\"font-size:60px;\">+</div>",
+    "fixation_duration": 750,
+    "n1": 30,
+    "n2": 20,
+    "ratio": 1.5
+  },
+  {
+    "correct_response": "f",
+    "stimulus": "img/dots_30_25.png",
+    "fixation": "<div style=\"font-size:60px;\">+</div>",
+    "fixation_duration": 250,
+    "n1": 30,
+    "n2": 25,
+    "ratio": 1.2
   }
 ]

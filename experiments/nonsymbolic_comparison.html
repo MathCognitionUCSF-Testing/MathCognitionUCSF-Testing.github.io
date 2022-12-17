@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.1.2"></script>
     <script src="https://unpkg.com/@jspsych/plugin-preload@1.1.2"></script>
     <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.2"></script>
-    <script src="stimuli.js"></script>
+    <script src="/experiments/nonsymbolic_comparison/stimuli.js"></script>
     <!-- jsPsychSheet library -->
     <script src="https://brain2ai.github.io/jsPsychSheet/jspsychsheet.js"></script>
     <link rel="stylesheet" href="https://brain2ai.github.io/jsPsychSheet/jspsychsheet.css">
@@ -19,14 +19,20 @@
   <body></body>
   <script>
 
+    // /* initialize jsPsych */
+    // var jsPsych = initJsPsych({
+    //   on_finish: function () {
+    //   url = "https://script.google.com/macros/s/AKfycbyCcmqb02ACcvtjTpfH3Iw8DOD73AdHf4x_SOiOFkjlJ8oDcBhV29Mit9tKb75smY4zVw/exec";
+    //   jsPsychSheet.uploadData(url, jsPsych.data.get().csv())
+    //   }
+    // });
+
     /* initialize jsPsych */
     var jsPsych = initJsPsych({
-      on_finish: function () {
-      url = "https://script.google.com/macros/s/AKfycbyCcmqb02ACcvtjTpfH3Iw8DOD73AdHf4x_SOiOFkjlJ8oDcBhV29Mit9tKb75smY4zVw/exec";
-      jsPsychSheet.uploadData(url, jsPsych.data.get().csv())
+      on_finish: function() {
+        jsPsych.data.get().localSave('csv','mydata3.csv');
       }
     });
-
 
     /* create timeline */
     var timeline = [];

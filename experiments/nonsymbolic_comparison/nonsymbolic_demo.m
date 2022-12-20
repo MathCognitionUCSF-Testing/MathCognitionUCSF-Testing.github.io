@@ -10,16 +10,16 @@ list = {};
 
 stim_table = table;
 for i = 1:size(allcombs,1)
-    figure('units', 'normalized', 'outerposition', [0 0 .3 .3]) % [0 0 .6 .3]
-    plot(rand(allcombs(i,1),1,1), '.', 'MarkerSize', 30, 'Color', 'blue')
-    hold on
-    plot(rand(allcombs(i,2),1,1), '.', 'MarkerSize', 30, 'Color', 'red')
-    axis square
-    axis off
-    set(gcf,'color','w');
-    set(gca,'color','w');
+%     figure('units', 'normalized', 'outerposition', [0 0 .3 .3]) % [0 0 .6 .3]
+%     plot(rand(allcombs(i,1),1,1), '.', 'MarkerSize', 30, 'Color', 'blue')
+%     hold on
+%     plot(rand(allcombs(i,2),1,1), '.', 'MarkerSize', 30, 'Color', 'red')
+%     axis square
+%     axis off
+%     set(gcf,'color','w');
+%     set(gca,'color','w');
 
-    filename = ['img/dots', '_', num2str(allcombs(i,1)), '_', num2str(allcombs(i,2)), '.png'];
+    filename = ['nonsymbolic_comparison/img/dots', '_', num2str(allcombs(i,1)), '_', num2str(allcombs(i,2)), '.png'];
     if allcombs(i,1) > allcombs(i,2)
        resp = 'f';
     else
@@ -28,8 +28,8 @@ for i = 1:size(allcombs,1)
 
     stim_table.correct_response(i) = {resp};
     stim_table.stimulus(i) = {filename};
-    stim_table.fixation(i) = {'+'};
-    stim_table.fixation_duration(i) = randsanb
+    stim_table.fixation(i) = {'<div style="font-size:60px;">+</div>'};
+    stim_table.fixation_duration(i) = randsample([250:100:1000],1);
 %     trial = sprintf('%s%s%s%s%s%s%s%s%s%s', '{ stimulus: ', "'", 'img/', filename, "'", ',  correct_response: ', "'", resp, "'", '},');
 
 

@@ -30,7 +30,7 @@
     /* initialize jsPsych */
     var jsPsych = initJsPsych({
       on_finish: function() {
-        jsPsych.data.get().localSave('csv','mydata3.csv');
+        jsPsych.data.get().localSave('csv','result_non_symbolic_comparison.csv');
       }
     });
 
@@ -39,11 +39,11 @@
 
 
     /* preload images */
-    var preload = {
-      type: jsPsychPreload,
-      images: ['img/blue.png', 'img/orange.png']
-    };
-    timeline.push(preload);
+    // var preload = {
+    //   type: jsPsychPreload,
+    //   images: ['img/blue.png', 'img/orange.png']
+    // };
+    // timeline.push(preload);
 
     /* define welcome message trial */
     var welcome = {
@@ -70,7 +70,7 @@
         <p>If there are <strong>more dots on the right</strong>, press the letter <strong>J</strong>
         as fast as you can.</p>
         <div style='width: 700px;'>
-        <div style='float: center;'><img src='img/dots_10_15.png'></img>
+        <div style='float: center;'><img src='nonsymbolic_comparison/img/dots_10_15.png'></img>
         </div>
         <p>Press any key to begin.</p>
       `,

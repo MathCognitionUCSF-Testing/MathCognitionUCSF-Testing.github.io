@@ -64,15 +64,16 @@
     var instructions = {
       type: jsPsychHtmlKeyboardResponse,
       stimulus: `
-        <p>In this experiment, you will compare numbers. A cloud of dots will appear on the left side and right side of the screen.</p>
-        <p>If there are <strong>more dots on the left</strong>, 
-        press the letter <strong>F</strong> on the keyboard as fast as you can.</p>
-        <p>If there are <strong>more dots on the right</strong>, press the letter <strong>J</strong>
-        as fast as you can.</p>
-        <div style='width: 700px;'>
-        <div style='float: center;'><img src='nonsymbolic_comparison/img/dots_10_15.png'></img>
-        </div>
+
+        <h1>Nonsymbolic Comparison task</h1>
+        <h2>In this experiment, you will compare two sets of dots like the ones below:</h2>
+        <div style='float: center;'><img src='nonsymbolic_comparison/img/dots_10_15.png'  width="800"></img></div>
+        <h2>Your task is to choose the <em>larger</em> set as fast and as accurate as you can!</h2>
+        <h2>If the the <strong>left</strong> set is larger, press <strong>F</strong>.</h2>
+        <h2>If the the <strong>right</strong> set is larger, press <strong>J</strong>.</h2>
         <p>Press any key to begin.</p>
+
+
       `,
       post_trial_gap: 2000
     };

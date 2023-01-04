@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Non-symbolic Estimation</title>
+    <title>Non-symbolic Calculation</title>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script src="https://unpkg.com/jspsych@7.3.1"></script>
     <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.2"></script>
@@ -30,7 +30,7 @@
     /* initialize jsPsych */
     var jsPsych = initJsPsych({
       on_finish: function() {
-        jsPsych.data.get().localSave('csv','result_nonsymbolic_estimation.csv');
+        jsPsych.data.get().localSave('csv','result_nonsymbolic_calculation.csv');
       }
     });
 
@@ -65,10 +65,12 @@
       type: jsPsychHtmlKeyboardResponse,
       stimulus: `
 
-        <h1>Nonsymbolic Estimation task</h1>
-        <h2>In this experiment, you will estimate the number of dots on the screen, such as the dots below:</h2>
+        <h1>Nonsymbolic Calculation Task</h1>
+        <h2>In this experiment, you estimate the calculation with two sets of dots like the ones below:</h2>
         <div style='float: center;'><img src='nonsymbolic_comparison/img/dots_10_15.png'  width="800"></img></div>
-        <h2>Your task is to estimate how many dots you see and <strong>type the number on your keyboard</strong>, as fast and accurately as you can.</h2>
+        <h2>Your task is to choose which set of dots is the correct answer, as fast and accurately as you can.</h2>
+        <h2>If the <strong>left</strong> set is correct, press <strong>F</strong>.</h2>
+        <h2>If the <strong>right</strong> set is correct, press <strong>J</strong>.</h2>
         <p>Press any key to begin.</p>
 
 
@@ -93,7 +95,7 @@
     var test = {
       type: jsPsychImageKeyboardResponse,
       stimulus: jsPsych.timelineVariable('stimulus'),
-      choices: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],
+      choices: ['f', 'j'],
       data: {
         task: 'response',
         correct_response: jsPsych.timelineVariable('correct_response')

@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.1.2"></script>
     <script src="https://unpkg.com/@jspsych/plugin-preload@1.1.2"></script>
     <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.2"></script>
-    <script src="/experiments/nonsymbolic_comparison/stimuli.js"></script>
+    <script src="/experiments/nonsymbolic_estimation/stimuli.js"></script>
     <!-- jsPsychSheet library -->
     <script src="https://brain2ai.github.io/jsPsychSheet/jspsychsheet.js"></script>
     <link rel="stylesheet" href="https://brain2ai.github.io/jsPsychSheet/jspsychsheet.css">
@@ -30,7 +30,7 @@
     /* initialize jsPsych */
     var jsPsych = initJsPsych({
       on_finish: function() {
-        jsPsych.data.get().localSave('csv','result_nonsymbolic_estimation.csv');
+        jsPsych.data.get().localSave('csv','result_non_symbolic_comparison.csv');
       }
     });
 
@@ -65,10 +65,12 @@
       type: jsPsychHtmlKeyboardResponse,
       stimulus: `
 
-        <h1>Nonsymbolic Estimation task</h1>
-        <h2>In this experiment, you will estimate the number of dots on the screen, such as the dots below:</h2>
+        <h1>Nonsymbolic Comparison task</h1>
+        <h2>In this experiment, you will compare two sets of dots like the ones below:</h2>
         <div style='float: center;'><img src='nonsymbolic_comparison/img/dots_10_15.png'  width="800"></img></div>
-        <h2>Your task is to estimate how many dots you see and <strong>type the number on your keyboard</strong>, as fast and accurately as you can.</h2>
+        <h2>Your task is to choose the <em>larger</em> set as fast and as accurate as you can!</h2>
+        <h2>If the the <strong>left</strong> set is larger, press <strong>F</strong>.</h2>
+        <h2>If the the <strong>right</strong> set is larger, press <strong>J</strong>.</h2>
         <p>Press any key to begin.</p>
 
 
@@ -93,16 +95,19 @@
     var test = {
       type: jsPsychImageKeyboardResponse,
       stimulus: jsPsych.timelineVariable('stimulus'),
-      choices: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],
+      choices: "NO_KEYS",
+      trial_duration: 500,
       data: {
-        task: 'response',
-        correct_response: jsPsych.timelineVariable('correct_response')
-      },
-      on_finish: function(data){
-        data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
+        task: 'dots'
       }
     };
 
+
+    var dots = {
+      type: jsPsychSurveyText,
+      questions: [{prompt: 'How many dots?', name: 'dots', required: true}],
+      data: {dots: 'dots'}
+    };
 
     /* define fixation and test trials */
     var blank = {
@@ -117,7 +122,7 @@
 
     /* define test procedure */
     var test_procedure = {
-      timeline: [fixation, test, blank],
+      timeline: [fixation, test, dots, blank],
       timeline_variables: test_stimuli,
       repetitions: 1,
       randomize_order: true
@@ -135,7 +140,7 @@
         var accuracy = Math.round(correct_trials.count() / trials.count() * 100);
         var rt = Math.round(correct_trials.select('rt').mean());
 
-        return `<p>You (${subID}) responded correctly on ${accuracy}% of the trials.</p>
+        return `<p>You ${subID} responded correctly on ${accuracy}% of the trials.</p>
           <p>Your average response time was ${rt}ms.</p>
           <p>Press any key to complete the experiment. Thank you!</p>`;
 

@@ -1,1 +1,21 @@
-list
+correct_response,stimulus,fixation,fixation_duration
+j,img/dots_10_15.png,"<div style=""font-size:60px;"">+</div>",872
+j,img/dots_10_20.png,"<div style=""font-size:60px;"">+</div>",650
+j,img/dots_10_25.png,"<div style=""font-size:60px;"">+</div>",919
+j,img/dots_10_30.png,"<div style=""font-size:60px;"">+</div>",911
+f,img/dots_15_10.png,"<div style=""font-size:60px;"">+</div>",900
+j,img/dots_15_20.png,"<div style=""font-size:60px;"">+</div>",499
+j,img/dots_15_25.png,"<div style=""font-size:60px;"">+</div>",855
+j,img/dots_15_30.png,"<div style=""font-size:60px;"">+</div>",697
+f,img/dots_20_10.png,"<div style=""font-size:60px;"">+</div>",451
+f,img/dots_20_15.png,"<div style=""font-size:60px;"">+</div>",432
+j,img/dots_20_25.png,"<div style=""font-size:60px;"">+</div>",800
+j,img/dots_20_30.png,"<div style=""font-size:60px;"">+</div>",377
+f,img/dots_25_10.png,"<div style=""font-size:60px;"">+</div>",471
+f,img/dots_25_15.png,"<div style=""font-size:60px;"">+</div>",310
+f,img/dots_25_20.png,"<div style=""font-size:60px;"">+</div>",342
+j,img/dots_25_30.png,"<div style=""font-size:60px;"">+</div>",388
+f,img/dots_30_10.png,"<div style=""font-size:60px;"">+</div>",951
+f,img/dots_30_15.png,"<div style=""font-size:60px;"">+</div>",868
+f,img/dots_30_20.png,"<div style=""font-size:60px;"">+</div>",650
+f,img/dots_30_25.png,"<div style=""font-size:60px;"">+</div>",832

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Symbol Identification</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://unpkg.com/jspsych@7.3.1"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.1.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-preload@1.1.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.2"></script>
+    <script src="/experiments/nonsymbolic_comparison/stimuli.js"></script>
+    <!-- jsPsychSheet library -->
+    <script src="https://brain2ai.github.io/jsPsychSheet/jspsychsheet.js"></script>
+    <link rel="stylesheet" href="https://brain2ai.github.io/jsPsychSheet/jspsychsheet.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/jspsych@7.3.1/css/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+  <script>
+
+    // /* initialize jsPsych */
+    // var jsPsych = initJsPsych({
+    //   on_finish: function () {
+    //   url = "https://script.google.com/macros/s/AKfycbyCcmqb02ACcvtjTpfH3Iw8DOD73AdHf4x_SOiOFkjlJ8oDcBhV29Mit9tKb75smY4zVw/exec";
+    //   jsPsychSheet.uploadData(url, jsPsych.data.get().csv())
+    //   }
+    // });
+
+    /* initialize jsPsych */
+    var jsPsych = initJsPsych({
+      on_finish: function() {
+        jsPsych.data.get().localSave('csv','result_symbol_identification.csv');
+      }
+    });
+
+    /* create timeline */
+    var timeline = [];
+
+
+    /* preload images */
+    // var preload = {
+    //   type: jsPsychPreload,
+    //   images: ['img/blue.png', 'img/orange.png']
+    // };
+    // timeline.push(preload);
+
+    /* define welcome message trial */
+    var welcome = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "Welcome to the experiment. Press any key to begin."
+    };
+    timeline.push(welcome);
+
+
+    var id = {
+      type: jsPsychSurveyText,
+      questions: [{prompt: 'Please, type your PIDN.', name: 'subID', required: true}],
+      data: {id_question: 'id_question'}
+    };
+    timeline.push(id);
+
+    /* define instructions trial */
+    var instructions = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `
+
+        <h1>Symbol Identification Task</h1>
+        <h2>In this experiment, you will identify symbols like the ones below:</h2>
+        <div style='float: center;'><img src='nonsymbolic_comparison/img/dots_10_15.png'  width="800"></img></div>
+        <h2>Your task is to click on the symbol the word represents, as fast and accurately as you can.</h2>
+        <p>Press any key to begin.</p>
+
+
+      `,
+      post_trial_gap: 2000
+    };
+    timeline.push(instructions);
+
+
+    /* define fixation and test trials */
+    var fixation = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: jsPsych.timelineVariable('fixation'),
+      choices: "NO_KEYS",
+      trial_duration: jsPsych.timelineVariable('fixation_duration'),
+      data: {
+        task: 'fixation'
+      }
+    };
+    
+    // https://groups.google.com/g/jspsych/c/-rZQOC-LsVs?pli=1
+    var test = {
+      type: jsPsychImageKeyboardResponse,
+      stimulus: jsPsych.timelineVariable('stimulus'),
+      choices: ['f', 'j'],
+      data: {
+        task: 'response',
+        correct_response: jsPsych.timelineVariable('correct_response')
+      },
+      on_finish: function(data){
+        data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
+      }
+    };
+
+
+    /* define fixation and test trials */
+    var blank = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: ' ',
+      choices: "NO_KEYS",
+      trial_duration: 500,
+      data: {
+        task: 'fixation'
+      }
+    };
+
+    /* define test procedure */
+    var test_procedure = {
+      timeline: [fixation, test, blank],
+      timeline_variables: test_stimuli,
+      repetitions: 1,
+      randomize_order: true
+    };
+    timeline.push(test_procedure);
+
+    /* define debrief */
+    var debrief_block = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: function() {
+
+        var subID = jsPsych.data.get().filter({id_question: 'id_question'}).values()[0].response.subID;
+        var trials = jsPsych.data.get().filter({task: 'response'});
+        var correct_trials = trials.filter({correct: true});
+        var accuracy = Math.round(correct_trials.count() / trials.count() * 100);
+        var rt = Math.round(correct_trials.select('rt').mean());
+
+        return `<p>You (${subID}) responded correctly on ${accuracy}% of the trials.</p>
+          <p>Your average response time was ${rt}ms.</p>
+          <p>Press any key to complete the experiment. Thank you!</p>`;
+
+      }
+    };
+
+
+    timeline.push(debrief_block);
+
+
+    /* start the experiment */
+    jsPsych.run(timeline);
+
+
+    
+
+
+    
+
+
+  </script>
+</html>
+
+
+

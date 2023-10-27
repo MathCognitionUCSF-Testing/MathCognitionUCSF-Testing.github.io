@@ -6,7 +6,7 @@ title: Math Cognition UCSF testing
 ## Math Cognition Experiments
 
 
-| **[Nonsymbolic comparison](/experiments/nonsymbolic_comparison/nonsymbolic_comparison.html)** | **[Symbolic comparison](/experiments/symbolic_comparison.html)** | **[Nonsymbolic estimation](/experiments/nonsymbolic_estimation.html)** | 
+| **[Nonsymbolic comparison](https://run.pavlovia.org/lucyyyr/nonsymbolic_comparison_test/?__pilotToken=3c59dc048e8850243be8079a5c74d079&__oauthToken=ed2fe8fea1d9757f7066648527f586c0c42568788d925fd7a0cad00da1d95dee)** | **[Symbolic comparison](/experiments/symbolic_comparison.html)** | **[Nonsymbolic estimation](/experiments/nonsymbolic_estimation.html)** | 
 |:-------------:|:-------------:|:-------------:|
 | <img src="assets/nonsymbolic_comparison.png" width="300"> |   <img src="assets/symbolic_comparison.png" width="300"> |   <img src="assets/nonsymbolic_estimation.png" width="300"> |
 

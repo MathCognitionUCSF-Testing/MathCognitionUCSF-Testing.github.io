@@ -6,7 +6,7 @@ title: Math Cognition UCSF testing
 ## Math Cognition Experiments
 
 
-| **[Nonsymbolic comparison](https://run.pavlovia.org/lucyyyr/nonsymbolic_comparison_test/?__pilotToken=3c59dc048e8850243be8079a5c74d079&__oauthToken=ed2fe8fea1d9757f7066648527f586c0c42568788d925fd7a0cad00da1d95dee)** | **[Symbolic comparison](/experiments/symbolic_comparison.html)** | **[Nonsymbolic estimation](/experiments/nonsymbolic_estimation.html)** | 
+| **[Nonsymbolic comparison](https://run.pavlovia.org/isaackim/multitudes/task/comparison/?task=nonsymbolic)** | **[Symbolic comparison](https://run.pavlovia.org/isaackim/multitudes/task/comparison/?task=symbolic)** | **[Nonsymbolic estimation](/experiments/nonsymbolic_estimation.html)** | 
 |:-------------:|:-------------:|:-------------:|
 | <img src="assets/nonsymbolic_comparison.png" width="300"> |   <img src="assets/symbolic_comparison.png" width="300"> |   <img src="assets/nonsymbolic_estimation.png" width="300"> |
 
@@ -15,7 +15,7 @@ title: Math Cognition UCSF testing
 
 </p>
 
-| **[Nonsymbolic Calculation](/experiments/nonsymbolic_calculation.html)** | **[Number line](/experiments/number_line.html)** | **[Symbol identification](/experiments/symbol_identification.html)** | 
+| **[Nonsymbolic Calculation](/experiments/nonsymbolic_calculation.html)** | **[Number line](https://run.pavlovia.org/isaackim/multitudes/task/numberline/)** | **[Symbol identification](/experiments/symbol_identification.html)** | 
 |:-------------:|:-------------:|:-------------:|
 | <img src="assets/nonsymbolic_calculation.png" width="300"> |   <img src="assets/number_line.png" width="300"> |   <img src="assets/symbol_identification.png" width="300"> |
 
@@ -26,7 +26,7 @@ title: Math Cognition UCSF testing
 
 </p>
 
-| **[Approximate Calculation](/experiments/approximate_calculation.html)** | **[Exact Calculation](/experiments/exact_calculation.html)** | **[Geometrical reasoning](/experiments/geometrical_reasoning.html)** | 
+| **[Approximate Calculation](/experiments/approximate_calculation.html)** | **[Exact Calculation](/experiments/exact_calculation.html)** | **[Geometrical reasoning](https://run.pavlovia.org/isaackim/multitudes/task/geometry/)** | 
 |:-------------:|:-------------:|:-------------:|
 | <img src="assets/approximate_calculation.png" width="300"> |   <img src="assets/exact_calculation.png" width="300"> |   <img src="assets/geometrical_reasoning.png" width="300"> |
 
